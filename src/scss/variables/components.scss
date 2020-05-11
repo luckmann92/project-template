@@ -1,0 +1,34 @@
+$border-radius: .25rem;
+$border-width: 1px;
+
+$rounded-pill: 50rem;
+
+$hr-border-color: rgba($black, .1);
+$hr-border-width: $border-width;
+
+$mark-padding: .2em;
+
+$dt-font-weight: map_get($font-weights, bold);
+
+$kbd-box-shadow: inset 0 -.1rem 0 rgba($black, .25);
+$nested-kbd-font-weight: map_get($font-weights, bold);
+
+$list-inline-padding: .5rem;
+
+$mark-bg: #fcf8e3;
+
+$hr-margin-y: $spacer;
+
+$displays: none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex !default;
+$overflows: auto, hidden !default;
+$positions: static, relative, absolute, fixed, sticky !default;
+
+$z-indexes: (
+    "dropdown": 1000,
+    "sticky": 1020,
+    "fixed": 1030,
+    "modal-backdrop": 1040,
+    "modal": 1050,
+    "popover": 1060,
+    "tooltip": 1070,
+);

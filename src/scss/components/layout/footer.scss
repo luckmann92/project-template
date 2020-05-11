@@ -1,0 +1,11 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    border: 2px dotted black;
+
+    &:before {
+        content: 'Footer';
+    }
+}

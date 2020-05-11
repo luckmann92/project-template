@@ -1,0 +1,49 @@
+/* Colors */
+
+@mixin color-classes($color_name, $color_type, $color_value) {
+    @if ($color_type == 'base') {
+        $color_type: null;
+    } @else {
+        $color_type: -#{$color_type};
+    }
+
+    @if ($enable-colors-bg) {
+        .bg-#{$color_name}#{$color_type} {
+            border-color: $color_value !important;
+            background-color: $color_value !important;
+        }
+    }
+
+    @if ($enable-colors-text) {
+        .text-#{$color_name}#{$color_type} {
+            color: $color_value !important;
+            caret-color: $color_value !important;
+        }
+    }
+
+    @if ($enable-colors-border) {
+        .border-#{$color_name}#{$color_type} {
+            border-color: $color_value !important;
+        }
+    }
+}
+
+@each $color_name, $color_color in $colors {
+    @if ($color_name == 'shades') {
+        @each $clr_name, $color_value in $color_color {
+            @include color-classes($clr_name, 'base', $color_value);
+        }
+    } @else {
+        @each $color_type, $color_value in $color_color {
+            @if ($enable-colors-pack or $color_type == 'base') {
+                @include color-classes($color_name, $color_type, $color_value);
+            }
+        }
+    }
+}
+
+@if ($enable-colors-theme) {
+    @each $color_name, $color_value in $theme-colors {
+        @include color-classes($color_name, 'base', $color_value);
+    }
+}

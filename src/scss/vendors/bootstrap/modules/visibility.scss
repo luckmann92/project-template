@@ -1,0 +1,11 @@
+/* Visibility */
+
+@if ($enable-visibility) {
+    .visible {
+        visibility: visible !important;
+    }
+
+    .invisible {
+        visibility: hidden !important;
+    }
+}

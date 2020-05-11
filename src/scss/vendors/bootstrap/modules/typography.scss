@@ -1,0 +1,126 @@
+/* Typography */
+
+@if ($enable-typography) {
+    .h1, .h2, .h3, .h4, .h5, .h6 {
+        font-family: $font-family-base;
+        font-weight: map_get($font-weights, medium);
+        line-height: 1.2;
+        margin-bottom: $spacer * 1.5;
+    }
+
+    .h1 {
+        font-size: $font-size-base * 2.5;
+    }
+
+    .h2 {
+        font-size: $font-size-base * 2;
+    }
+
+    .h3 {
+        font-size: $font-size-base * 1.75;
+    }
+
+    .h4 {
+        font-size: $font-size-base * 1.5;
+    }
+
+    .h5 {
+        font-size: $font-size-base * 1.25;
+    }
+
+    .h6 {
+        font-size: $font-size-base;
+    }
+
+    .title {
+        font-size: $font-size-base * 1.8;
+    }
+
+    .subtitle-1 {
+        font-size: $font-size-base * 1.4;
+    }
+
+    .body-1 {
+        font-family: $font-family-base;
+        font-size: $font-size-base;
+        font-weight: $font-weight-base;
+        line-height: $line-height-base;
+        color: $font-color-base;
+    }
+
+    .caption {
+        font-size: $font-size-base * .7;
+    }
+
+    //
+    // Horizontal rules
+    //
+    hr {
+        margin-top: $hr-margin-y;
+        margin-bottom: $hr-margin-y;
+        border: 0;
+        border-top: $hr-border-width solid $hr-border-color;
+    }
+
+    //
+    // Lists
+    //
+    .list-unstyled {
+        @include list-unstyled;
+    }
+
+    // Inline turns list items into inline-block
+    .list-inline {
+        @include list-unstyled;
+    }
+
+    .list-inline-item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: $list-inline-padding;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        .h1 {
+            font-size: $font-size-base * 3;
+        }
+
+        .h2 {
+            font-size: $font-size-base * 2.5;
+        }
+
+        .h3 {
+            font-size: $font-size-base * 2;
+        }
+
+        .h4 {
+            font-size: $font-size-base * 1.75;
+        }
+
+        .h5 {
+            font-size: $font-size-base * 1.5;
+        }
+
+        .h6 {
+            font-size: $font-size-base * 1.25;
+        }
+
+        .title {
+            font-size: $font-size-base * 2;
+        }
+
+        .subtitle-1 {
+            font-size: $font-size-base * 1.6;
+        }
+
+        .body-1 {
+            font-size: $font-size-base * 1.2;
+        }
+
+        .caption {
+            font-size: $font-size-base * .85;
+        }
+    }
+}

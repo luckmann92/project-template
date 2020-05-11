@@ -1,0 +1,14 @@
+$primary: map_get($blue, "base");
+$secondary: map_get($gray, "base");
+$success: map_get($green, "base");
+$info: map_get($cyan, "base");
+$warning: map_get($yellow, "base");
+$danger: map_get($red, "base");
+$light: map_get($gray, "lighten-1");
+$dark: map_get($gray, "darken-3");
+$black: map_get($shades, "black");
+$white: map_get($shades, "white");
+
+$colors: ();
+
+$theme-colors: ();

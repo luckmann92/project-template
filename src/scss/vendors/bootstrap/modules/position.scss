@@ -1,0 +1,25 @@
+/* Position */
+
+@if ($enable-position) {
+    @each $position in $positions {
+        .position-#{$position} {
+            position: $position !important;
+        }
+    }
+
+    .fixed-top {
+        position: fixed;
+        z-index: map_get($z-indexes, fixed);
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .fixed-bottom {
+        position: fixed;
+        z-index: map_get($z-indexes, fixed);
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}

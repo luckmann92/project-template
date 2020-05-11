@@ -1,0 +1,13 @@
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 4px;
+
+$spacers: ();
+
+@for $i from 0 through 25 {
+    $spacers: map-merge($spacers, ($i: $spacer * $i))
+}

@@ -1,0 +1,49 @@
+/* Grid */
+
+@if ($enable-grid) {
+    // Set the container width, and override it for fixed navbars in media queries.
+    .container {
+        @include make-container();
+        @include make-container-max-widths();
+    }
+
+    // Fluid container
+    //
+    // Utilizes the mixin meant for fixed width containers, but with 100% width for
+    // fluid, full width layouts.
+    .container-fluid {
+        @include make-container();
+    }
+
+    // Row
+    //
+    // Rows contain and clear the floats of your columns.
+    .row {
+        @include make-row();
+    }
+
+    .row--dense {
+        margin: -$grid-gutter-width / 2;
+
+        > .col,
+        > [class*="col-"] {
+            padding: $grid-gutter-width / 2;
+        }
+    }
+
+    // Remove the negative margin from default .row, then the horizontal padding
+    // from all immediate children columns (to prevent runaway style inheritance).
+    .row--no-gutters {
+        margin: 0;
+
+        > .col,
+        > [class*="col-"] {
+            padding: 0;
+        }
+    }
+
+    // Columns
+    //
+    // Common styles for small and large grid columns
+    @include make-grid-columns();
+}

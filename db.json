@@ -1,0 +1,13 @@
+{
+  "user": [
+    {
+      "id": "getHeader",
+      "status": "ok",
+      "result": {
+        "name": "Иван",
+        "lastName": "Иванов",
+        "avatar": "img/catalog-icon.png"
+      }
+    }
+  ]
+}

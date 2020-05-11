@@ -1,0 +1,62 @@
+/* Borders */
+
+@if ($enable-borders) {
+    .border {
+        border: $border-width solid !important;
+    }
+
+    .border-top {
+        border-top: $border-width solid !important;
+    }
+
+    .border-right {
+        border-right: $border-width solid !important;
+    }
+
+    .border-bottom {
+        border-bottom: $border-width solid !important;
+    }
+
+    .border-left {
+        border-left: $border-width solid !important;
+    }
+
+    .border-0 {
+        border: 0 !important;
+    }
+
+    .border-top-0 {
+        border-top: 0 !important;
+    }
+
+    .border-right-0 {
+        border-right: 0 !important;
+    }
+
+    .border-bottom-0 {
+        border-bottom: 0 !important;
+    }
+
+    .border-left-0 {
+        border-left: 0 !important;
+    }
+
+    //
+    // Border-radius
+    //
+    .rounded {
+        border-radius: $border-radius !important;
+    }
+
+    .rounded-circle {
+        border-radius: 50% !important;
+    }
+
+    .rounded-pill {
+        border-radius: $rounded-pill !important;
+    }
+
+    .rounded-0 {
+        border-radius: 0 !important;
+    }
+}

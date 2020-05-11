@@ -1,0 +1,70 @@
+{
+    "name": "purejs-project-template",
+    "version": "1.0.0",
+    "description": "Стартовый шаблон frontend-проекта с использованием gulp, webpack, babel, json server, stylelint, eslint, bootstrap 4.",
+    "scripts": {
+        "start": "gulp start",
+        "build": "set \"NODE_ENV=production\" && gulp build",
+        "eslint": "eslint --ext .js --ignore-path .gitignore .",
+        "eslintfix": "eslint --fix --ext .js --ignore-path .gitignore .",
+        "stylelint": "stylelint src/scss/**/*.scss",
+        "stylelintfix": "stylelint src/scss/**/*.scss --fix"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/imolater/oldschool-frontend-empty-project.git"
+    },
+    "author": "Ramil Sharipov",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/imolater/oldschool-frontend-empty-project/issues"
+    },
+    "homepage": "https://github.com/imolater/oldschool-frontend-empty-project#readme",
+    "devDependencies": {
+        "@babel/core": "^7.5.4",
+        "@babel/preset-env": "^7.5.4",
+        "babel-eslint": "^10.0.3",
+        "babel-loader": "^8.0.6",
+        "core-js": "^3.4.8",
+        "eslint": "^6.2.2",
+        "eslint-config-standard": "^14.1.0",
+        "eslint-loader": "^3.0.3",
+        "eslint-plugin-import": "^2.19.1",
+        "eslint-plugin-node": "^10.0.0",
+        "eslint-plugin-promise": "^4.2.1",
+        "eslint-plugin-standard": "^4.0.1",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^7.0.1",
+        "gulp-changed": "^4.0.2",
+        "gulp-class-prefix": "^1.0.1",
+        "gulp-clean": "^0.4.0",
+        "gulp-clean-css": "^4.2.0",
+        "gulp-file-include": "^2.0.1",
+        "gulp-html-prefix": "0.0.1",
+        "gulp-if": "^3.0.0",
+        "gulp-imagemin": "^6.0.0",
+        "gulp-json-srv": "^1.2.0",
+        "gulp-livereload": "^4.0.1",
+        "gulp-rename": "^1.4.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-size": "^3.0.0",
+        "gulp-stylelint": "^10.0.0",
+        "gulp-svg-sprite": "^1.5.0",
+        "gulp-watch": "^5.0.1",
+        "node-sass": "^4.13.0",
+        "node-sass-tilde-importer": "^1.0.2",
+        "stylelint": "^11.1.1",
+        "stylelint-config-airbnb": "0.0.0",
+        "stylelint-config-recommended-scss": "^4.1.0",
+        "stylelint-config-standard": "^19.0.0",
+        "stylelint-declaration-block-no-ignored-properties": "^2.2.0",
+        "stylelint-order": "^3.1.1",
+        "stylelint-scss": "^3.13.0",
+        "uglifyjs-webpack-plugin": "^2.2.0",
+        "webpack": "^4.39.1",
+        "webpack-stream": "^5.2.1"
+    },
+    "dependencies": {
+        "bootstrap": "^4.3.1"
+    }
+}
